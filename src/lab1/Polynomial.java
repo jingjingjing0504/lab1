@@ -9,7 +9,7 @@ public class Polynomial {
 			if(s.charAt(i)<42 || (s.charAt(i)>43 && s.charAt(i)<48) || (s.charAt(i)>57 && s.charAt(i)<97) || s.charAt(i)>122)
 			{
 				num++;
-			}
+			}	
 			else
 			{
 				String[] newstr=s.split("\\+");
@@ -45,13 +45,10 @@ public class Polynomial {
 		{
 			String[] str1=s1.split(" ");
 			String s2=s;
-			
-			
+
 			for(int i=1;i<str1.length;i++)
 			{
-				
-			    s2=s2.replace(str1[i].split("=")[0],str1[i].split("=")[1]);
-			    
+			    s2=s2.replace(str1[i].split("=")[0],str1[i].split("=")[1]);		    
 			}
 			System.out.println(s2);
 			System.out.println(s2); //print the second string
@@ -68,21 +65,13 @@ public class Polynomial {
 			{
 				if(str1[i].charAt(j)==s2.charAt(4))
 				{
-					
-					num++;
-					
-				}
-				
-			}
+					num++;	
+				}	
+			}      
 			
-			
-			
-				if(num==0)
+				if(num == 0)
 				{
-					
-					
 					sb=sb+"";
-					
 				}
 				else if(num==1)
 				{
