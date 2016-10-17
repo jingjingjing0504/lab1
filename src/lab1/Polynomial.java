@@ -38,16 +38,23 @@ public class Polynomial {
 		if(s1.equals("!simplify"))
 		{
 			System.out.println(s);
+			
+			
 		}
 		else
 		{
 			String[] str1=s1.split(" ");
 			String s2=s;
+			
+			
 			for(int i=1;i<str1.length;i++)
 			{
+				
 			    s2=s2.replace(str1[i].split("=")[0],str1[i].split("=")[1]);
+			    
 			}
 			System.out.println(s2);
+			System.out.println(s2); //print the second string
 		}
 	}
 	private static void derivative(String s,String s2)
