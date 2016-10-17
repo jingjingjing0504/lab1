@@ -70,10 +70,17 @@ public class Polynomial {
 				{
 					num++;
 				}
+				
 			}
+			
+			
+			
 				if(num==0)
 				{
+					
+					
 					sb=sb+"";
+					
 				}
 				else if(num==1)
 				{
