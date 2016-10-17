@@ -68,7 +68,9 @@ public class Polynomial {
 			{
 				if(str1[i].charAt(j)==s2.charAt(4))
 				{
+					
 					num++;
+					
 				}
 				
 			}
@@ -96,7 +98,9 @@ public class Polynomial {
 						}
 						else
 						{
+							
 					        str1[i]=str1[i].replace((("*")+s2.charAt(4)),"");
+					        
 						}
 					sb=sb+"+"+str1[i];
 					}
@@ -119,7 +123,7 @@ public class Polynomial {
 		}
 		else
 		{
-		System.out.println(s);
+		System.out.println(s);//print the string
 		}
 		String s1 =x.nextLine();
 		simplify(s,s1);
