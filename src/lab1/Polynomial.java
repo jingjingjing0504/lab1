@@ -3,7 +3,8 @@ import java.util.*;
 public class Polynomial {
 	private  static int expression(String s)
 	{
-		int num=0;
+		int num=0;//initalise the account
+		
 		for(int i=0;i<s.length();i++)
 		{
 			if(s.charAt(i)<42 || (s.charAt(i)>43 && s.charAt(i)<48) || (s.charAt(i)>57 && s.charAt(i)<97) || s.charAt(i)>122)
@@ -38,8 +39,6 @@ public class Polynomial {
 		if(s1.equals("!simplify"))
 		{
 			System.out.println(s);
-			
-			
 		}
 		else
 		{
@@ -65,7 +64,7 @@ public class Polynomial {
 			{
 				if(str1[i].charAt(j)==s2.charAt(4))
 				{
-					num++;	
+					num++;	//account the number
 				}	
 			}      
 			
@@ -75,7 +74,7 @@ public class Polynomial {
 				}
 				else if(num==1)
 				{
-					if(str1[i].length() == 1)
+					if( str1[i].length() == 1)
 					{
 						sb=sb+"+1";
 					}
@@ -87,9 +86,7 @@ public class Polynomial {
 						}
 						else
 						{
-							
 					        str1[i]=str1[i].replace((("*")+s2.charAt(4)),"");
-					        
 						}
 					sb=sb+"+"+str1[i];
 					}
